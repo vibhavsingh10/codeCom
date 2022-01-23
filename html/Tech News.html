@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <title>Tech News</title>
+    <style>
+        .head2 {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">codeCom</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/html/Tech News.html">Techn News</a></li>
+                  <li><a class="dropdown-item" href="/html/WebDesign.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="/html/python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="/html/c.html">C/C++</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/html/support.html">Support Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/html/contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login to codeCom!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Check me Out
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">SignUp to codeCom</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+    
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <main class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Google Assistant</h3>
+                        <div class="mb-1 text-muted">Jun 28</div>
+                        <p class="card-text mb-auto">Google Assistant gets standalone lock screen setting</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/images/thumb17.jpg" width="200" height="250" alt="Error loading image!">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Windows11</h3>
+                        <div class="mb-1 text-muted">Jun 16</div>
+                        <p class="mb-auto">A guide to Microsoft's next big release</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/images/thumb16.jpg" width="200" height="250" alt="Error loading image!">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    Check out all you need to know including system requirements, new features and when can you get the
+                    update.
+                </h3>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Windows 11: What are the system requirements?</h2>
+                    <p class="blog-post-meta">July 1, 2021 by <a
+                            href="https://indianexpress.com/article/technology/tech-news-technology/windows-11-update-check-system-requirements-new-features-and-more-7374797/"
+                            target="_blank">Mark</a>
+                    </p>
+
+                    <p>For your PC to run Windows 11, it will need a processor that has two or more cores and a clock
+                        speed of 1GHz or higher. It will also need to have RAM of 4GB or more, and at least 64GB
+                        storage. The PC will also need a TPM security version of TPM 1.2 or higher and SecureBootCapable
+                        support.</p>
+                    <hr>
+                    <p>This means that all machines running Intel’s sixth and seventh-generation processors are not
+                        eligible to get the new update. Meanwhile, on AMD-based systems, the A-series and FX-series,
+                        along with Ryzen 1000 and most Ryzen 2000 chips will not be able to run Windows 11.
+
+                    </p>
+                    <h2>Windows 11:</h2>
+                    <p>What’s new?</p>
+
+                    <p>Windows 11 focuses on a new user interface, a new Windows Store, and improvements to performance.
+                        The OS now features an overhauled design language, something consumers wanting from the next
+                        generation of Windows.
+
+                        These include a new centre-aligned Taskbar and Start button. The Live Tiles that have been
+                        around in some form since Windows 8 are now gone. Instead, we have a grid of icons that can be
+                        rearranged and pinned to the new Start Menu.
+
+                        There are rounded corners, along with widgets that include things like your calendar, weather,
+                        sports leaderboard. There’s also an improved System Tray with a new split Notifications and
+                        Quick Actions UI. Also, Windows Update will be faster and more efficient with updates that are
+                        40 per cent smaller and install in the background. Check out the complete list of changes in the
+                        link below.</p>
+                    <h3>How and when can you get Windows 11?</h3>
+                    <p>Windows 11 begin shipping to consumers later this year, and Windows Insiders can begin testing a
+                        preview of the release as early as next week. To test a preview of the operating system,
+                        interested users can register themselves for the Windows Insider Program on the Windows Insider
+                        website. For everyone else, Windows 11 will be a free upgrade, as long as you have Windows 10
+                        and the minimum system requirements.</p>
+
+                    <h2>Windows11:</h2>
+                    <img src="/images/win11.jpg" class="img-fluid" alt="Error loading image!" height="300" width="500">
+                    <p>Microsoft on Thursday announced Windows 11, the next generation of Windows. The newest version of
+                        Windows comes six years after the tech giant had introduced Windows 10 to the world. Windows 11
+                        focuses on a new user interface, a new Windows Store, and improvements to performance.</p>
+
+                    <p>Panos Panay, Microsoft’s chief product officer, described the new desktop operating system as
+                        “the Windows that brings you closer to the things you love.”
+
+                        Microsoft says it is also redesigning the Windows Store. Not just the brand new look, the
+                        company also said Windows 11 will support Android apps via Amazon’s app store. This means
+                        millions of popular apps which weren’t available on Windows will be available to download on the
+                        most popular desktop operating system.
+
+                        Earlier this year, Microsoft announced that it would cut the amount of revenue it takes from
+                        games on Windows. It said that it will reduce its cut from 30 per cent to 12 per cent to bring
+                        more PC games to Windows Store. During the virtual event, Panos Panay said developers can use
+                        Microsoft’s payment processor which takes a 12 per cent fee from purchases, or use their own
+                        payment processor and keep 100 per cent of purchases. Microsoft rival Apple is facing an
+                        antitrust probe over its app store policies.</p>
+
+                    <img src="/images/Windows-11.jpg" class="img-fluid" alt="Error loading image" height="500" width="600">
+                </article>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Amazon Web Services acquires encrypted messaging app Wickr</h2>
+                    <p class="blog-post-meta">December 23, 2020 by <a
+                            href="https://tech.hindustantimes.com/tech/news/amazon-web-services-acquires-encrypted-messaging-app-wickr-71624698661527.html"
+                            target="_blank">Jacob</a>
+                    </p>
+
+                    <p>AWS (Amazon Web Services) will be offering Wickr services effective immediately and the current
+                        Wickr users would not see significant changes for the time being.</p>
+
+                    <p>Amazon Web Services, a subsidiary of Amazon providing on-demand cloud computing platforms and
+                        APIs to individuals, has acquired Wickr, the encrypted messaging app founded in 2012. The
+                        company made this announcement through an official social media post that read, "We are excited
+                        to share that AWS has acquired Wickr, an innovative company that has developed the industry's
+                        most secure, end-to-end encrypted, communication technology."</p>
+                    <img src="/images/aws.jpg" class="img-fluid" alt="Error loading image" height="600" width="800">
+
+                    <p>Stephen Schmidt, Amazon Web Services' vice president, continued to nod the company's
+                        ever-deepening relationships with the military, and Washington in general, and said that Wickr's
+                        features give "security-conscious enterprises and government agencies the ability to implement
+                        important governance and security controls to help them meet their compliance requirements."</p>
+                </article>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Intel CEO says chip shortage to hit bottom in second half of 2021</h2>
+                    <p class="blog-post-meta">June 26, 2021 by <a
+                            href="https://tech.hindustantimes.com/tech/news/intel-ceo-says-chip-shortage-to-hit-bottom-in-second-half-of-2021-71624701728078.html"
+                            target="_blank">Chris</a>
+                    </p>
+
+                    <p>Intel Corp. Chief Executive Officer Pat Gelsinger predicted the shortage of semiconductors that’s
+                        hurting industries from automotive to consumer electronics will bottom out in the second half of
+                        this year before starting to improve.“I don’t expect the chip industry is back to a healthy
+                        supply-demand situation until ’23,” he said in an interview. “For a variety of industries, I
+                        think it’s still getting worse before it gets better.”The economy’s rebound from the depths of
+                        the pandemic has caused a flood of demand for the components that are the heart of all modern
+                        electronics. Lockdowns and changes in the way that large chunks of the world’s population work
+                        has speeded up a shift to digital systems that has further stretched the semiconductor
+                        industry’s ability to keep up with the flood of orders, according to Gelsinger.</p>
+                    <img src="/images/intel.jpg" alt="Error loading image" height="450" width="700" >
+                    <p>Intel Corp. Chief Executive Officer Pat Gelsinger predicted the shortage of semiconductors that’s
+                        hurting industries from automotive to consumer electronics will bottom out in the second half of
+                        this year before starting to improve.“I don’t expect the chip industry is back to a healthy
+                        supply-demand situation until ’23,” he said in an interview. “For a variety of industries, I
+                        think it’s still getting worse before it gets better.”The economy’s rebound from the depths of
+                        the pandemic has caused a flood of demand for the components that are the heart of all modern
+                        electronics. Lockdowns and changes in the way that large chunks of the world’s population work
+                        has speeded up a shift to digital systems that has further stretched the semiconductor
+                        industry’s ability to keep up with the flood of orders, according to Gelsinger.
+
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-light rounded">
+                        <h4 class="fst-italic">About</h4>
+                        <p class="mb-0">Here we provide latest and best tech news for readers of today</p>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                            <li><a href="https://twitter.com/login" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <div class="global">
+        <div class="curve"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-3">
+
+                </div>
+
+
+                <div class="social">
+                    <h6>Follow us</h6>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"
+                        target="_blank"><i class="fa fa-snapchat-ghost"></i> </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#"><i class="fa fa-google-plus"></i> </a>
+                </div>
+
+            </div>
+            <p class="copyright"> &copy; Copyright All rights reserved. </p>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

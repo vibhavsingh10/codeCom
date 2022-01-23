@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>codeCom - Coding Buddy</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <style>
+    .webimg{
+        border-radius: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">codeCom</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/html/Tech News.html">Techn News</a></li>
+                  <li><a class="dropdown-item" href="/html/WebDesign.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="/html/python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="/html/c.html">C/C++</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/html/support.html">Support Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/html/contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login to codeCom!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Check me Out
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">SignUp to codeCom</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+    
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Cover -->
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-dark rounded bg-warning">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">10 Web Development and Web Design Facts That You Should Know</h1>
+                <p class="lead my-3">Web Development has grabbed a lot of attention in today’s date. But the question
+                    arises, why has it gained such a massive audience in the last decade. So Here’s the answer: Web
+                    development is the basic building and maintenance of websites; it’s the whole procedure that happens
+                    to make a website look great, responsive, work smooth, and performing well with seamless user
+                    experience.</p>
+                <p class="lead mb-0"><a
+                        href="https://www.geeksforgeeks.org/10-web-development-and-web-design-facts-that-you-should-know/"
+                        class="text-white fw-bold" target="_blank">Continue reading...</a></p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">interesting facts about Web development and web design:</h2>
+
+                    <p>Web Development has grabbed a lot of attention in today’s date. But the question arises, why has
+                        it gained such a massive audience in the last decade. So Here’s the answer: Web development is
+                        the basic building and maintenance of websites; it’s the whole procedure that happens to make a
+                        website look great, responsive, work smooth, and performing well with seamless user experience.
+                    </p>
+                    <hr>
+                    <p>Web developers use a variety of languages depending upon the tasks. Web Development is highly
+                        demanded mainly due to its high payscale worldwide. It is also among one of the easiest domain
+                        which doesn’t compulsorily requires a university degree to prove yourself qualified. Web
+                        development is generally divided into two major sections, namely: Front-end and Back-end.
+                        Front-end deals with what is user going to see whereas back-end deals with all the server
+                        related stuff. Now let’s deep dive into the interesting facts about Web development and web
+                        design:</p>
+                    <h2>1. First Impression is the Last Impression</h2>
+                    <blockquote class="blockquote">
+                        <p>It takes less than a second, for a user to make his/her view on the organization by its
+                            initial experience through its web page. It is very significant to make the first impression
+                            as the best for everyone who lands on the page with the help of adequate background theme,
+                            fonts, icon designs, color combinations, proper animations(if required), layout, and
+                            maintaining the sections of the page in a well-designed manner. The first and most
+                            significant role for standing out through digital means is played by Web Development.</p>
+                    </blockquote>
+                    <h2>2. Easy, Easier, Easiest</h2>
+                    <blockquote class="blockquote">
+                        <p>Web development uses HTML, CSS, and Javascript to create responsive and attractive websites
+                            which are far easier than software development or android application development
+                            comparatively because in the native applications code should be programmed according to the
+                            platform because of the significant difference in language and processes resulting extra
+                            resources and skills to be familiar with it. But a web page has just to be built once with
+                            cross-browser support which not only makes it ready to use in all devices but also reaches a
+                            greater number of audiences. After all, the number matters the most for an organization.</p>
+                    </blockquote>
+                    <h2>3. Interrelation of Code and SEO</h2>
+                    <blockquote class="blockquote">
+                        <p>Your website should be the one that can stand out there. Many developers do not keep this
+                            point in their mind while writing the codes but each word can have a great impact to affect
+                            the reach of the page. Source code should be written considering SEO(Search Engine
+                            Optimization) which increases the rankings in search engines. Page titles and tags should be
+                            focused on during development.</p>
+                    </blockquote>
+                    <h2>4. More the Lists and Lesser the Paragraphs</h2>
+                    <blockquote class="blockquote">
+                        <p>A Bulky page with gigantic paragraphs is SEO friendly, but too much text reduces the
+                            responsiveness and avoided by the users. No users would prefer to large texts but surely go
+                            throughout the page if the details are mentioned in the form of lists with sub-points,
+                            pointing out the specialties, and along with it proper multimedia materials make it better.
+                        </p>
+                    </blockquote>
+                    <img src="/images/webdev.jpg" alt="Error loading image" class="img-fluid webimg" height="400" width="600">
+                    <h2>5. The Older, the Worst</h2>
+                    <blockquote class="blockquote">
+                        <p>An average lifespan of a website is between two or three years because digital technologies
+                            are continuously evolving. The aspects all over the internet never remain constant, so
+                            adapting to the change is necessary. Constant nurturing and modifications as per the trends
+                            are necessary to catch the audience.</p>
+                    </blockquote>
+                    <h2>6. You can Learn it All Within a Week</h2>
+                    <blockquote class="blockquote">
+                        <p>Learning Web development from scratch is not a tough task at all because HTML, CSS, and
+                            Javascript are far easier and one can easily get used to it within a week. After learning
+                            the fundamentals, making a normal responsive website is just a task of less than an hour.
+                            One can become an expert at it from a beginner in a short span due to which it has been a
+                            great choice among the developers to opt for.</p>
+                    </blockquote>
+                    <h2>7. Won’t Go Out of Your Budget</h2>
+                    <blockquote class="blockquote">
+                        <p>Building and Maintaining a responsive design and making the web page search engine friendly
+                            can do really for a lower cost as compared to native applications that require separate work
+                            for multiple platforms. The majority organization goes for a webpage rather than an android
+                            app to spread the brand to its target audience because it takes just seconds to load and run
+                            in any kind of device because of its cross-browser support. So you do not need to worry
+                            about the budget.</p>
+                    </blockquote>
+
+                    <h2>8. Targetting the DemoGraphics</h2>
+                    <blockquote class="blockquote">
+                        <p>Proper research of user demographics must be done and design must be presented according to
+                            it so that your larger group of audience connects well with your web page. Different places
+                            with different people and their different norms, due to which the reactions to technology
+                            might differ. Themes and page backgrounds should be considered by demographics.</p>
+                    </blockquote>
+                    <img src="/images/webdev2.jpg" alt="Error loading image" class="img-fluid webimg" height="400" width="600">
+                    <h2>9. Making it Go Better with the Smartphones</h2>
+                        <blockquote class="blockquote">
+                            <p>According to the research reports, two-thirds of the users surf the web pages on their
+                                smartphones. So it is necessary to use things such as CSS Flexbox or other tags which
+                                changes page as per the screen ratio and doesn’t compromise with the quality. All users
+                                surely might not be having desktop and laptops, so proper communication with the
+                                smartphone audience with the chatbot feature might play a good role.</p>
+                        </blockquote>
+                        <h2>10. Web Development is Not Web Design</h2>
+                        <blockquote class="blockquote">
+                            <p>Many people might think that web design and web development are synonyms of each other.
+                                That’s completely misleading. Web design is a subset of web development because the web
+                                developer has a lot more to do than just design and write code. Designers are those guys
+                                who are focused on the look and finish of a website; whereas web developers have a
+                                broader responsibility to make all the aspects(Back-end and Front-end) of the site
+                                perform in an error-free manner. These myths have been brought up because of similarness
+                                between front end development and web design.
+
+                                All these facts must be kept in mind as you go forward for your web presence. Always try
+                                experimenting with innovative approaches but don’t forget to consider the facts. Now you
+                                must have been clear about what web developers do? Do web developers make big money? Why
+                                should I go for it? So don’t just sit, start learning and building web pages..</p>
+                        </blockquote>
+                        <hr class="dropdown-divider">
+                        <div>
+                             <h3>How to Become a Full Stack Web Developer in 2021</h3>
+                            <a href="https://www.geeksforgeeks.org/how-to-become-a-full-stack-web-developer-in-2021/">Must Read</a>
+                        </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <div class="global">
+        <div class="curve"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-3">
+
+                </div>
+
+
+                <div class="social">
+                    <h6>Follow us</h6>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"
+                        target="_blank"><i class="fa fa-snapchat-ghost"></i> </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#"><i class="fa fa-google-plus"></i> </a>
+                </div>
+
+            </div>
+            <p class="copyright"> &copy; Copyright All rights reserved. </p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

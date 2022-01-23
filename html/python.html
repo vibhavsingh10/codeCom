@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>codeCom - Coding Buddy</title>
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">codeCom</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/html/Tech News.html">Techn News</a></li>
+                  <li><a class="dropdown-item" href="/html/WebDesign.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="/html/python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="/html/c.html">C/C++</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/html/support.html">Support Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/html/contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login to codeCom!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Check me Out
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">SignUp to codeCom</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+    
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-danger">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Facts about Python Programming that every Geek should know</h1>
+                <p class="lead my-3">Python ranked #1 on the IEEE Spectrum list of top programming languages for 2019.
+                    Today, we’ll take up some interesting facts about python programming to better understand what makes
+                    it so popular.
+
+                    Python is getting popular, almost every industry is using it. It is the advice of experts to start
+                    learning python as soon as possible. </p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-8">
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Interesting facts about Python Programming</h2>
+
+                    <p>Python ranked #1 on the IEEE Spectrum list of top programming languages for 2019. Today, we’ll
+                        take up some interesting facts about python programming to better understand what makes it so
+                        popular.
+
+                        Python is getting popular, almost every industry is using it. It is the advice of experts to
+                        start learning python as soon as possible.
+                    </p>
+                    <hr>
+                    <h2>1. Python was a hobby project</h2>
+                    <blockquote class="blockquote">
+                        <p>In December 1989, Python’s creator Guido Van Rossum was looking for a hobby project to keep
+                            him occupied in the week around Christmas. He had been thinking of writing a new scripting
+                            language that’d be a descendant of ABC and also appeal to Unix/C hackers. He chose to call
+                            it Python.</p>
+                    </blockquote>
+                    <h2>2. Why it was called Python</h2>
+                    <blockquote class="blockquote">
+                        <p>The language’s name isn’t about snakes, but about the popular British comedy troupe Monty
+                            Python (from the 1970s). Guido himself is a big fan of Monty Python’s Flying Circus. Being
+                            in a rather irreverent mood, he named the project ‘Python’. Isn’t it an interesting Python
+                            fact?</p>
+                    </blockquote>
+                    <h2>3. The Zen of Python</h2>
+                    <blockquote class="blockquote">
+                        <p>Tim Peters, a major contributor to the Python community, wrote this poem to highlight the
+                            philosophies of Python. If you type in “import this” in your Python IDLE, you’ll find this
+                            poem:</p>
+                        <img src="/images/python.jpg" alt="Error loading image" class="img-fluid" height="400" width="500">
+                    </blockquote>
+                    <h2>4. No braces</h2>
+                    <blockquote class="blockquote">
+                        <p>Unlike Java and C++, Python does not use braces to delimit code. Indentation is mandatory
+                            with Python. If you choose to import it from the __future__ package, it gives you a witty
+                            error.
+                        </p>
+                    </blockquote>
+                    <img src="/images/P1.jpg" alt="Error loading image" class="img-fluid webimg" height="200" width="400">
+                    <h2>5. Functions can return multiple values</h2>
+                    <blockquote class="blockquote">
+                        <p>In Python, a function can return more than one value as a tuple. Take a look at the following
+                            code:</p>
+                        <img src="/images/P2.jpg" alt="Error loading image" class="img-fluid" height="400" width="400">
+                        <p>This isn’t possible in a language like Java. There, you can return an array of values
+                            instead.</p>
+                    </blockquote>
+                    <h2>6.Python supports multiple assignments in one statement</h2>
+                    <blockquote class="blockquote">
+                        <p>Python will let you assign the same value to multiple variables in one statement. It will
+                            also let you assign values to multiple variables at once. This also means swapping in Python
+                            is quicker and can be done in only 1 line of code:</p>
+                        <img src="/images/P3.jpg" alt="Error loading image" class="img-fluid" height="250" width="250">
+                    </blockquote>
+                    <h2>7. You can chain comparison</h2>
+                    <blockquote class="blockquote">
+                        <p>Conditions may contain more than one comparison at once. You can have a condition that checks
+                            whether a value is greater than another and lesser than yet another all at once.</p>
+                        <img src="/images/P4.jpg" alt="Error loading image" class="img-fluid" height="250" width="250">
+                    </blockquote>
+
+                    <h2>8. String literals concatenate together</h2>
+                    <blockquote class="blockquote">
+                        <p>If you type in string literals separated by a space, Python concatenates them together. So,
+                            ‘Hello’ ‘World’ becomes ‘HelloWorld’.</p>
+                        <img src="/images/P5.jpg" alt="Error loading image" class="img-fluid" height="150" width="250">
+                    </blockquote>
+
+                    <h2>9. Antigravity!</h2>
+                    <blockquote class="blockquote">
+                        <p>If you get to the IDLE and type in import antigravity, it opens up a webpage with a comic
+                            about the antigravity module.</p>
+                        <img src="/images/P6.jpg" alt="Error loading image" class="img-fluid" height="700" width="400">
+                    </blockquote>
+                    <h2>10. for- and while- loops can have else statements</h2>
+                    <blockquote class="blockquote">
+                        <p>The else statement is not limited to if and try statements. If you add an else block after a
+                            for- or while- loop, the statements inside the else block are executed only after the loop
+                            completes normally. If the loop raises an exception or reaches a break statement, the code
+                            under else does not execute. This can be good for search operations.</p>
+                        <img src="/images/P8.jpg" alt="Error loading image" class="img-fluid" height="300" width="300">
+                    </blockquote>
+                    <hr class="dropdown-divider">
+                    <div>
+                        <h3>Learn Full Python Here!</h3>
+                        <a href=https://www.tutorialspoint.com/python/index.htm>Must
+                            Read</a>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <div class="global">
+        <div class="curve"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-3">
+
+                </div>
+
+
+                <div class="social">
+                    <h6>Follow us</h6>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"
+                        target="_blank"><i class="fa fa-snapchat-ghost"></i> </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#"><i class="fa fa-google-plus"></i> </a>
+                </div>
+
+            </div>
+            <p class="copyright"> &copy; Copyright All rights reserved. </p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
